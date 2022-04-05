@@ -24,16 +24,25 @@
             <tr>    
                 <td><label>Address: </label></td>    
                 <td>    
-                    <input type="textarea" size="50" name="address" placeholder="Address">    
+                    <input type="textarea" size="5" name="address" placeholder="Door no.">  
+                    <input type="textarea" size="50" name="address" placeholder="Location">
+                    <input type="textarea" size="15" name="address" placeholder="District">
+                    <input type="textarea" size="8" name="address" placeholder="Pincode">
                 </td>    
             </tr>    
             <tr>    
                 <td><label>Gender: </label></td>    
                 <td>    
                     <input type="radio" name="gender" value="male">Male    
-                    <input type="radio" name="gender" value="femele">Female    
+                    <input type="radio" name="gender" value="female">Female    
                 </td>    
-            </tr>    
+            </tr> 
+            <tr>
+                <td><label>DOB: </label></td>
+                <td>
+                    <<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">
             <tr>    
                 <td><label>Email Id: </label></td>    
                 <td>    
@@ -46,24 +55,19 @@
                     <input type="number" name="mobile">    
                 </td>    
             </tr>    
-            <tr>    
-            <td><label>Course: </label></td>    
-                <td>    
-                    <select name="course">    
-                        <option value="select course">select course</option>    
-                        <option value="HTML">HTML</option>    
-                        <option value="CSS">CSS</option>    
-                        <option value="JavaScript">JAVASCRIPT</option>    
-                        <option value="Java">JAVA</option>    
-                    </select>    
-                </td>    
-            </tr>    
+                
             <tr>    
                 <td>    
                     <input type="submit" name="submit" value="Submit">    
-                    <input type="reset" name="reset" value="Reset">    
+                    <input type="clear" name="clear" value="clear">    
                 </td>    
-            </tr>             
+            </tr> 
+             <tr>    
+                <td><label>Adhaar number: </label></td>    
+                <td>    
+                    <input type="text" name="adhaar number" placeholder="xxxx xxxx xxxx">    
+                </td>    
+            </tr>
         </table>    
     </form>    
 </body>    
