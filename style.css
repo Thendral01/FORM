@@ -5,7 +5,7 @@
     input[type="text"] {  
         width: 250px;  
     }  
-    input[type="submit"], input[type="reset"] {  
+    input[type="submit"], input[type="clear"] {  
         width: 77px;  
         height: 27px;  
         position: relative;left: 180px;  
