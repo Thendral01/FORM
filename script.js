@@ -41,7 +41,7 @@
             var gender = document.reg_form.gender;    
             var email = document.reg_form.email;    
             var mobile = document.reg_form.mobile;    
-            var course = document.reg_form.course;    
+             
     
             if (fname.value.length <= 0) {    
                 alert("Name is required");    
@@ -73,10 +73,18 @@
                 mobile.focus();    
                 return false;    
             }    
-            if (course.value == "select course") {    
-                alert("Course is required");    
-                course.focus();    
-                return false;    
+        
+{
+    var dob = document.reg_form.dob["ProcessInfo"]["txtDOB"].value;
+    var pattern = /^([0-9]{2})-([0-9]{2})-([0-9]{4})$/;
+    if (dob == null || dob == "" || !pattern.test(dob)) {
+        errMessage += "Invalid date of birth\n";
+        return false;
+    }
+    else {
+        return true
+    }
+}    
             }    
             return false;    
         }    
@@ -124,23 +132,25 @@
                 <td>    
                     <input type="number" name="mobile">    
                 </td>    
-            </tr>    
+            </tr>
             <tr>    
-            <td><label>Course: </label></td>    
+                <td><label>Adhaar number: </label></td>    
                 <td>    
-                    <select name="course">    
-                        <option value="select course">select course</option>    
-                        <option value="HTML">HTML</option>    
-                        <option value="CSS">CSS</option>    
-                        <option value="JavaScript">JAVASCRIPT</option>    
-                        <option value="Java">JAVA</option>    
-                    </select>    
+                    <input type="text" name="Adhaar" placeholder="xxxx xxxx xxxx">    
                 </td>    
-            </tr>    
+            </tr>
+            <tr>    
+                <td><label>DOB: </label></td>    
+                <td>    
+                    <input type="text" name="DOB" placeholder="dd/mm/yyyy">    
+                </td>    
+            </tr>
+               
+           
             <tr>    
                 <td>    
                     <input type="submit" name="submit" value="Submit">    
-                    <input type="reset" name="reset" value="Reset">    
+                    <input type="clear" name="clear" value="clear">    
                 </td>    
             </tr>             
         </table>    
