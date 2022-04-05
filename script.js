@@ -40,9 +40,9 @@
             var address = document.reg_form.address;    
             var gender = document.reg_form.gender;    
             var email = document.reg_form.email;    
-            var mobile = document.reg_form.mobile;    
-             
-    
+            var mobile = document.reg_form.mobile;
+            var adhaar = document.reg_form.adhaar;
+        
             if (fname.value.length <= 0) {    
                 alert("Name is required");    
                 fname.focus();    
@@ -72,7 +72,12 @@
                 alert("Mobile number is required");    
                 mobile.focus();    
                 return false;    
-            }    
+            }
+            if (adhaar.value.length <= 0) {    
+                alert("Adhaar number is required");    
+                adhaar.focus();    
+                return false;
+            }
         
 {
     var dob = document.reg_form.dob["ProcessInfo"]["txtDOB"].value;
@@ -150,7 +155,7 @@
             <tr>    
                 <td>    
                     <input type="submit" name="submit" value="Submit">    
-                    <input type="clear" name="clear" value="clear">    
+                    <input type="reset" name="reset" value="reset">    
                 </td>    
             </tr>             
         </table>    
