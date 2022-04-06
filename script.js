@@ -78,20 +78,7 @@
                 adhaar.focus();    
                 return false;
             }
-            if (password.value=="") {
-                alert("Please Enter password!!");
-                password.focus();
-                return false;
-            }
-            function confirmPassword() {
-                var Password=password.value("Password").value;
-                var confirmPassword=password.value("confirmPassword").value;
-                if(Password==confirmpassword();
-                   {return true;
-                   }
-                   else
-                       alert("incorrect password");
-            }
+           
         
         
 {
